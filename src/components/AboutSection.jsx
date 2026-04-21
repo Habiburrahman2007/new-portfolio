@@ -159,7 +159,7 @@ const AboutSection = memo(function AboutSection() {
           <div className="flex-1 h-px bg-black/[0.07]" />
         </Gsap.div>
 
-        <div className="grid lg:grid-cols-[400px_1fr] xl:grid-cols-[440px_1fr] gap-14 lg:gap-20 xl:gap-28 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[400px_1fr] xl:grid-cols-[440px_1fr] gap-10 lg:gap-20 xl:gap-28 items-start">
 
           {/* ══════════════════════════════
               LEFT COLUMN — Image & Meta
@@ -223,11 +223,11 @@ const AboutSection = memo(function AboutSection() {
             </div>
 
             {/* Quick Stats */}
-            <div className="mt-4 grid grid-cols-2 min-[380px]:grid-cols-3 gap-2">
+            <div className="mt-4 grid grid-cols-1 min-[340px]:grid-cols-3 gap-2">
               {STATS.map((stat, i) => (
-                <div key={i} className="bg-white border border-black/[0.08] rounded-[3px] py-4 px-2 text-center flex flex-col justify-center min-h-[85px]">
-                  <p className="font-black text-[18px] min-[400px]:text-[22px] text-black leading-none tabular-nums">{stat.value}</p>
-                  <p className="font-mono text-[7px] min-[400px]:text-[8px] uppercase tracking-[0.05em] text-black/32 mt-2 leading-tight whitespace-pre-line">{stat.label}</p>
+                <div key={i} className="bg-white border border-black/[0.08] rounded-[3px] py-4 px-2 text-center flex flex-col justify-center min-h-[75px] w-full">
+                  <p className="font-black text-[16px] min-[400px]:text-[22px] text-black leading-none tabular-nums">{stat.value}</p>
+                  <p className="font-mono text-[7px] min-[400px]:text-[8px] uppercase tracking-[0.05em] text-black/32 mt-2 leading-tight whitespace-normal">{stat.label}</p>
                 </div>
               ))}
             </div>
@@ -244,7 +244,7 @@ const AboutSection = memo(function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-              className="mb-8 md:mb-10"
+              className="mb-8 md:mb-10 overflow-hidden w-full"
             >
               {/* Eyebrow */}
               <p className="font-mono text-[9px] uppercase tracking-[0.28em] text-black/30 mb-5">
@@ -257,7 +257,7 @@ const AboutSection = memo(function AboutSection() {
                   Full Stack Developer
                 </span>
 
-                <span className="block text-base min-[400px]:text-lg md:text-2xl lg:text-3xl font-medium tracking-[-0.01em] text-black/55 mt-2">
+                <span className="block text-sm min-[350px]:text-base min-[400px]:text-lg md:text-2xl lg:text-3xl font-medium tracking-[-0.01em] text-black/55 mt-2">
                   & Automation Specialist (n8n)
                 </span>
               </h2>
@@ -283,7 +283,7 @@ const AboutSection = memo(function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.14, duration: 0.75, ease: 'easeOut' }}
-              className="space-y-4 text-[15px] md:text-[15.5px] font-light text-black/60 leading-[1.88] max-w-full md:max-w-[580px]"
+              className="space-y-4 text-[14px] min-[400px]:text-[15.5px] font-light text-black/60 leading-[1.8] max-w-full md:max-w-[580px] overflow-hidden break-words"
             >
               <p>
                 I'm <strong className="text-black font-semibold">Muhammad Habiburrahman</strong>, a Full Stack Web Developer and Automation Specialist focused on building robust applications and streamlining complex workflows using tools like n8n.
@@ -310,7 +310,7 @@ const AboutSection = memo(function AboutSection() {
                 {CAPABILITIES.map((cap, i) => (
                   <span
                     key={i}
-                    className="font-mono text-[10px] md:text-[10.5px] uppercase tracking-[0.12em] font-bold text-black/75 border border-black/[0.11] px-3.5 py-[9px] rounded-[3px] hover:border-black hover:text-black hover:bg-black hover:text-white transition-all duration-200 cursor-default"
+                    className="font-mono text-[9px] min-[400px]:text-[10px] md:text-[10.5px] uppercase tracking-[0.12em] font-bold text-black/75 border border-black/[0.11] px-3 py-[7px] min-[400px]:px-3.5 min-[400px]:py-[9px] rounded-[3px] hover:border-black hover:text-black hover:bg-black hover:text-white transition-all duration-200 cursor-default"
                   >
                     {cap}
                   </span>
@@ -327,14 +327,14 @@ const AboutSection = memo(function AboutSection() {
                 transition={{ delay: 0.22, duration: 0.75 }}
                 className="mt-14 md:mt-16"
               >
-                <div className="flex items-center gap-3 mb-5">
-                  <span className="w-[5px] h-[5px] rounded-full bg-cyan-500 shrink-0" />
-                  <p className="font-mono text-[9.5px] md:text-[10px] uppercase tracking-[0.22em] text-black/40">
-                    Notable Achievements
+                <div className="flex items-center gap-2 min-[400px]:gap-3 mb-5">
+                  <span className="w-1 h-1 min-[400px]:w-[5px] min-[400px]:h-[5px] rounded-full bg-cyan-500 shrink-0" />
+                  <p className="font-mono text-[9px] min-[400px]:text-[10px] uppercase tracking-[0.22em] text-black/40">
+                    Achievements
                   </p>
                   <div className="flex-1 h-px bg-gradient-to-r from-black/[0.1] to-transparent" />
-                  <span className="font-mono text-[9px] font-bold border border-black/[0.1] bg-white px-2.5 py-1 rounded-[2px] text-black/35 tabular-nums">
-                    {achievements.length} Award{achievements.length !== 1 ? 's' : ''}
+                  <span className="font-mono text-[8px] min-[400px]:text-[9px] font-bold border border-black/[0.1] bg-white px-2 py-0.5 min-[400px]:px-2.5 min-[400px]:py-1 rounded-[2px] text-black/35 tabular-nums">
+                    {achievements.length}
                   </span>
                 </div>
 
