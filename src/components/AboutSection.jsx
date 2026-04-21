@@ -223,7 +223,7 @@ const AboutSection = memo(function AboutSection() {
             </div>
 
             {/* Quick Stats */}
-            <div className="mt-2.5 grid grid-cols-1 min-[400px]:grid-cols-3 gap-2.5">
+            <div className="mt-2.5 grid grid-cols-1 sm:grid-cols-3 gap-2.5">
               {STATS.map((stat, i) => (
                 <div key={i} className="bg-white border border-black/[0.08] rounded-[3px] py-4 px-3 text-center">
                   <p className="font-black text-[22px] text-black leading-none tabular-nums">{stat.value}</p>
@@ -253,11 +253,11 @@ const AboutSection = memo(function AboutSection() {
 
               {/* Main title */}
               <h2 className="font-display font-bold tracking-[-0.025em] leading-[1.08] text-black w-full">
-                <span className="block text-[clamp(1.15rem,8vw,4.5rem)]">
+                <span className="block text-3xl min-[400px]:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
                   Full Stack Developer
                 </span>
 
-                <span className="block text-[clamp(0.8rem,4vw,2.1rem)] font-medium tracking-[-0.01em] text-black/55 mt-2">
+                <span className="block text-lg min-[400px]:text-xl md:text-2xl lg:text-3xl font-medium tracking-[-0.01em] text-black/55 mt-2">
                   & Automation Specialist (n8n)
                 </span>
               </h2>

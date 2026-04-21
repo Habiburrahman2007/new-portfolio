@@ -230,7 +230,7 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
             initial={false}
             animate={isRevealed ? { opacity: 1, y: 0 } : { opacity: 0, y: 28 }}
             transition={{ duration: 0.75, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-            className="text-[clamp(1.25rem,8vw,9rem)] font-black uppercase tracking-tight text-transparent leading-[0.88] font-outline-fallback"
+            className="text-[clamp(1.15rem,6vw,9rem)] font-black uppercase tracking-tight text-transparent leading-[0.88] font-outline-fallback"
           >
             MUHAMMAD
           </Gsap.h1>
@@ -239,7 +239,7 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
             initial={false}
             animate={isRevealed ? { opacity: 1, y: 0 } : { opacity: 0, y: 28 }}
             transition={{ duration: 0.75, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="text-[clamp(1.25rem,9.5vw,9rem)] font-black uppercase tracking-tight text-black leading-[0.88] mt-2 sm:mt-0"
+            className="text-[clamp(1.15rem,7.5vw,9rem)] font-black uppercase tracking-tight text-black leading-[0.88] mt-2 sm:mt-0"
           >
             HABIBURRAHMAN
           </Gsap.h1>
