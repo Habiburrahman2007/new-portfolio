@@ -18,11 +18,14 @@ body {
   font-feature-settings: "ss01" 1, "cv11" 1;
   -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 html {
   -webkit-overflow-scrolling: touch;
   overscroll-behavior: none;
+  overflow-x: hidden;
 }
 
 /* Optimasi untuk touch events di mobile */

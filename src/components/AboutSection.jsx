@@ -88,7 +88,7 @@ const AchievementCard = ({ achievement, index }) => {
               <span className="font-mono text-[10px] text-black/22 font-bold tabular-nums select-none border border-black/[0.08] px-1.5 py-0.5 rounded-[2px] leading-none">
                 {String(index + 1).padStart(2, '0')}
               </span>
-              <h3 className="font-display font-bold text-[24px] md:text-[29px] tracking-[-0.022em] text-black leading-[0.98]">
+              <h3 className="font-display font-bold text-[20px] min-[400px]:text-[24px] md:text-[29px] tracking-[-0.022em] text-black leading-[0.98]">
                 {achievement.title}
               </h3>
             </div>
@@ -142,7 +142,7 @@ const AboutSection = memo(function AboutSection() {
         <div className="absolute -left-24 bottom-0 w-[380px] h-[380px] bg-black/[0.03] rounded-full blur-[100px]" />
       </div>
 
-      <div className="max-w-[1380px] mx-auto px-6 md:px-12 relative z-10">
+      <div className="max-w-[1380px] mx-auto px-5 md:px-12 relative z-10">
 
         {/* ── Section Label ── */}
         <Gsap.div
@@ -173,7 +173,7 @@ const AboutSection = memo(function AboutSection() {
           >
             {/* Profile image with decorative offset border */}
             <div className="relative">
-              <div className="absolute -top-2.5 -left-2.5 w-full h-full border border-cyan-400/25 rounded-[4px] pointer-events-none" />
+              <div className="absolute -top-2 -left-2 w-full h-full border border-cyan-400/20 rounded-[4px] pointer-events-none" />
 
               <div className="relative aspect-[4/5] w-full rounded-[4px] overflow-hidden border border-black/[0.07] bg-black/[0.04] group">
                 {/* Hover desaturation overlay */}
@@ -223,11 +223,11 @@ const AboutSection = memo(function AboutSection() {
             </div>
 
             {/* Quick Stats */}
-            <div className="mt-2.5 grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+            <div className="mt-4 grid grid-cols-2 min-[380px]:grid-cols-3 gap-2">
               {STATS.map((stat, i) => (
-                <div key={i} className="bg-white border border-black/[0.08] rounded-[3px] py-4 px-3 text-center">
-                  <p className="font-black text-[22px] text-black leading-none tabular-nums">{stat.value}</p>
-                  <p className="font-mono text-[8px] uppercase tracking-[0.08em] text-black/32 mt-1.5 leading-tight whitespace-pre-line">{stat.label}</p>
+                <div key={i} className="bg-white border border-black/[0.08] rounded-[3px] py-4 px-2 text-center flex flex-col justify-center min-h-[85px]">
+                  <p className="font-black text-[18px] min-[400px]:text-[22px] text-black leading-none tabular-nums">{stat.value}</p>
+                  <p className="font-mono text-[7px] min-[400px]:text-[8px] uppercase tracking-[0.05em] text-black/32 mt-2 leading-tight whitespace-pre-line">{stat.label}</p>
                 </div>
               ))}
             </div>
@@ -252,12 +252,12 @@ const AboutSection = memo(function AboutSection() {
               </p>
 
               {/* Main title */}
-              <h2 className="font-display font-bold tracking-[-0.025em] leading-[1.08] text-black w-full">
-                <span className="block text-3xl min-[400px]:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+              <h2 className="font-display font-bold tracking-[-0.025em] leading-[1.08] text-black w-full text-balance">
+                <span className="block text-2xl min-[400px]:text-3xl md:text-5xl lg:text-6xl xl:text-7xl">
                   Full Stack Developer
                 </span>
 
-                <span className="block text-lg min-[400px]:text-xl md:text-2xl lg:text-3xl font-medium tracking-[-0.01em] text-black/55 mt-2">
+                <span className="block text-base min-[400px]:text-lg md:text-2xl lg:text-3xl font-medium tracking-[-0.01em] text-black/55 mt-2">
                   & Automation Specialist (n8n)
                 </span>
               </h2>
@@ -340,7 +340,7 @@ const AboutSection = memo(function AboutSection() {
 
                 <div className="flex overflow-x-auto overflow-y-visible pb-8 pt-2 gap-4 md:gap-5 snap-x snap-proximity hide-scrollbar touch-pan-x cursor-grab active:cursor-grabbing">
                   {achievements.map((achievement, index) => (
-                    <div key={index} className="w-[calc(100vw-48px)] sm:w-[350px] md:w-[400px] shrink-0 snap-start select-none">
+                    <div key={index} className="w-[calc(100vw-40px)] sm:w-[350px] md:w-[400px] shrink-0 snap-start select-none">
                       <AchievementCard
                         achievement={achievement}
                         index={index}
