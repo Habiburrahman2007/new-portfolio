@@ -205,25 +205,25 @@ const AboutSection = memo(function AboutSection() {
             </div>
 
             {/* Status + Location */}
-            <div className="mt-4 grid grid-cols-2 gap-2.5">
+            <div className="mt-4 grid grid-cols-1 min-[400px]:grid-cols-2 gap-2.5">
               <div className="bg-white border border-black/[0.08] rounded-[3px] py-3.5 px-4">
                 <p className="font-mono text-[9px] uppercase tracking-[0.14em] text-black/32 mb-1.5">Status</p>
                 <div className="flex items-center gap-2">
                   <span className="w-[6px] h-[6px] rounded-full bg-cyan-500 shrink-0" />
-                  <span className="text-[13px] font-bold text-black">Available</span>
+                  <span className="text-[13px] font-bold text-black uppercase tracking-wider">Available</span>
                 </div>
               </div>
               <div className="bg-white border border-black/[0.08] rounded-[3px] py-3.5 px-4">
                 <p className="font-mono text-[9px] uppercase tracking-[0.14em] text-black/32 mb-1.5">Location</p>
                 <div className="flex items-center gap-1.5">
                   <MapPin size={11} className="text-black/38 shrink-0" />
-                  <span className="text-[13px] font-bold text-black">Semarang</span>
+                  <span className="text-[13px] font-bold text-black uppercase tracking-wider">Semarang</span>
                 </div>
               </div>
             </div>
 
             {/* Quick Stats */}
-            <div className="mt-2.5 grid grid-cols-3 gap-2.5">
+            <div className="mt-2.5 grid grid-cols-1 min-[400px]:grid-cols-3 gap-2.5">
               {STATS.map((stat, i) => (
                 <div key={i} className="bg-white border border-black/[0.08] rounded-[3px] py-4 px-3 text-center">
                   <p className="font-black text-[22px] text-black leading-none tabular-nums">{stat.value}</p>
@@ -252,12 +252,12 @@ const AboutSection = memo(function AboutSection() {
               </p>
 
               {/* Main title */}
-              <h2 className="font-display font-bold tracking-[-0.025em] leading-[1.08] text-black">
-                <span className="block text-[44px] sm:text-[56px] lg:text-[64px] xl:text-[72px]">
+              <h2 className="font-display font-bold tracking-[-0.025em] leading-[1.08] text-black w-full">
+                <span className="block text-[clamp(1.15rem,8vw,4.5rem)]">
                   Full Stack Developer
                 </span>
 
-                <span className="block text-[22px] sm:text-[26px] lg:text-[30px] xl:text-[34px] font-medium tracking-[-0.01em] text-black/55 mt-2">
+                <span className="block text-[clamp(0.8rem,4vw,2.1rem)] font-medium tracking-[-0.01em] text-black/55 mt-2">
                   & Automation Specialist (n8n)
                 </span>
               </h2>
@@ -272,7 +272,7 @@ const AboutSection = memo(function AboutSection() {
               className="flex items-center gap-3 mb-8 md:mb-9"
             >
 
-              <span className="font-mono text-[10px] md:text-[10.5px] uppercase tracking-[0.2em] text-black/35">
+              <span className="font-mono text-[9px] min-[400px]:text-[10px] md:text-[10.5px] uppercase tracking-[0.2em] text-black/35">
                 Full Stack Web · Workflow Automation · API Integration
               </span>
             </Gsap.div>
@@ -283,7 +283,7 @@ const AboutSection = memo(function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.14, duration: 0.75, ease: 'easeOut' }}
-              className="space-y-4 text-[15px] md:text-[15.5px] font-light text-black/60 leading-[1.88] max-w-[580px]"
+              className="space-y-4 text-[15px] md:text-[15.5px] font-light text-black/60 leading-[1.88] max-w-full md:max-w-[580px]"
             >
               <p>
                 I'm <strong className="text-black font-semibold">Muhammad Habiburrahman</strong>, a Full Stack Web Developer and Automation Specialist focused on building robust applications and streamlining complex workflows using tools like n8n.
@@ -294,7 +294,7 @@ const AboutSection = memo(function AboutSection() {
             </Gsap.div>
 
             {/* Divider */}
-            <div className="mt-10 md:mt-12 mb-10 md:mb-12 h-px bg-black/[0.07] max-w-[580px]" />
+            <div className="mt-10 md:mt-12 mb-10 md:mb-12 h-px bg-black/[0.07] w-full md:max-w-[580px]" />
 
             {/* Core Capabilities */}
             <Gsap.div
@@ -338,9 +338,9 @@ const AboutSection = memo(function AboutSection() {
                   </span>
                 </div>
 
-                <div className="flex overflow-x-auto overflow-y-visible pb-8 pt-2 gap-4 md:gap-5 snap-x snap-mandatory hide-scrollbar">
+                <div className="flex overflow-x-auto overflow-y-visible pb-8 pt-2 gap-4 md:gap-5 snap-x snap-proximity hide-scrollbar touch-pan-x cursor-grab active:cursor-grabbing">
                   {achievements.map((achievement, index) => (
-                    <div key={index} className="w-[85vw] sm:w-[350px] md:w-[400px] shrink-0 snap-start">
+                    <div key={index} className="w-[calc(100vw-48px)] sm:w-[350px] md:w-[400px] shrink-0 snap-start select-none">
                       <AchievementCard
                         achievement={achievement}
                         index={index}

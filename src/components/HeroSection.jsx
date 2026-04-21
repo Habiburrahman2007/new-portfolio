@@ -230,7 +230,7 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
             initial={false}
             animate={isRevealed ? { opacity: 1, y: 0 } : { opacity: 0, y: 28 }}
             transition={{ duration: 0.75, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-            className="text-[clamp(4.25rem,14vw,9rem)] font-black uppercase tracking-tight text-transparent leading-[0.88] font-outline-fallback"
+            className="text-[clamp(1.25rem,8vw,9rem)] font-black uppercase tracking-tight text-transparent leading-[0.88] font-outline-fallback"
           >
             MUHAMMAD
           </Gsap.h1>
@@ -239,7 +239,7 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
             initial={false}
             animate={isRevealed ? { opacity: 1, y: 0 } : { opacity: 0, y: 28 }}
             transition={{ duration: 0.75, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="text-[clamp(4.25rem,14vw,9rem)] font-black uppercase tracking-tight text-black leading-[0.88] mt-2 sm:mt-0"
+            className="text-[clamp(1.25rem,9.5vw,9rem)] font-black uppercase tracking-tight text-black leading-[0.88] mt-2 sm:mt-0"
           >
             HABIBURRAHMAN
           </Gsap.h1>
@@ -254,12 +254,12 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
           initial={false}
           animate={isRevealed ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ delay: 0.38, duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
-          className="flex flex-col items-center gap-2 mt-0"
+          className="flex flex-col items-center gap-2 mt-4 md:mt-2"
         >
-          <h2 className="text-[clamp(1.35rem,4.2vw,2.25rem)] font-bold text-black/80 tracking-tight flex items-center justify-center flex-wrap gap-2 px-2">
+          <h2 className="text-[clamp(1.15rem,4.2vw,2.25rem)] font-bold text-black/80 tracking-tight flex items-center justify-center flex-wrap gap-2 px-4">
             Engineering <span className="bg-cyan-400/30 px-2 rounded-md ring-1 ring-cyan-500/20">Automated</span> Solutions<span className="text-cyan-500 font-extrabold -ml-1">.</span>
           </h2>
-          <p className="font-sans text-base text-black/60 max-w-xl leading-7 mt-2 px-4">
+          <p className="font-sans text-sm md:text-base text-black/60 max-w-xl leading-7 mt-2 px-6">
             Full Stack Web Developer & Automation Specialist (n8n) creating efficient, scalable digital systems.
           </p>
         </Gsap.div>

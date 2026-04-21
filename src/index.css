@@ -101,11 +101,13 @@ html,
 body,
 .hide-scrollbar {
   font-family: var(--font-sans);
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-  overscroll-behavior: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  -webkit-overflow-scrolling: touch;
+}
+
+.hide-scrollbar {
+  overscroll-behavior-x: auto;
 }
 
 /* Custom Text Selection Color */
