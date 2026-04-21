@@ -32,7 +32,7 @@ export default function ProjectCaseLayout({
 
       {/* ── Sticky header ─────────────────────── */}
       <div className="sticky top-0 z-40 bg-[#FAF9F6]/90 backdrop-blur-md border-b border-black/5">
-        <div className="max-w-6xl mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 py-5 md:py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <span className="font-mono text-[10px] uppercase font-bold tracking-[0.12em] md:tracking-[0.16em] text-black/40 flex items-center gap-2">
               {project.category}
@@ -53,8 +53,8 @@ export default function ProjectCaseLayout({
 
       <div className="flex-1 overflow-y-auto">
         {/* ── Hero Section ──────────────────────── */}
-        <section className="max-w-4xl mx-auto text-center flex flex-col items-center px-6 md:px-10 pt-16 md:pt-20 pb-12">
-          <p className="font-mono text-[10px] font-bold uppercase tracking-[0.18em] md:tracking-[0.26em] text-black/40 mb-4">
+        <section className="max-w-4xl mx-auto text-center flex flex-col items-center px-4 sm:px-6 md:px-10 pt-12 md:pt-20 pb-10 md:pb-12">
+          <p className="font-mono text-[9px] md:text-[10px] font-bold uppercase tracking-[0.18em] md:tracking-[0.26em] text-black/40 mb-4">
             Project Case Study
           </p>
 
@@ -62,7 +62,7 @@ export default function ProjectCaseLayout({
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="text-5xl md:text-7xl lg:text-8xl font-black uppercase leading-[0.9] tracking-tighter text-black mb-6"
+            className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black uppercase leading-[0.9] tracking-tighter text-black mb-6"
           >
             {project.title.split(' ').map((word, i, arr) => (
               <span key={i} className={i === arr.length - 1 ? "text-transparent" : ""} style={i === arr.length - 1 ? { WebkitTextStroke: '2px black' } : {}}>
@@ -84,17 +84,17 @@ export default function ProjectCaseLayout({
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.16, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-10 flex flex-wrap justify-center gap-4"
+            className="mt-10 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 w-full sm:w-auto px-4 sm:px-0"
           >
             {project.links?.live && (
               <a href={project.links.live} target="_blank" rel="noreferrer"
-                className="bg-cyan-400 text-black px-8 py-3.5 font-bold uppercase text-xs tracking-wider hover:bg-black hover:text-white transition-all duration-300 rounded-[2px] flex items-center gap-2 shadow-sm">
+                className="bg-cyan-400 text-black px-8 py-3.5 font-bold uppercase text-xs tracking-wider hover:bg-black hover:text-white transition-all duration-300 rounded-[2px] flex items-center justify-center gap-2 shadow-sm w-full sm:w-auto">
                 <Globe size={16} /> View Live
               </a>
             )}
             {project.links?.repo && (
               <a href={project.links.repo} target="_blank" rel="noreferrer"
-                className="bg-black/5 text-black px-8 py-3.5 font-bold uppercase text-xs tracking-wider border border-transparent hover:border-black/20 transition-all duration-300 rounded-[2px] flex items-center gap-2">
+                className="bg-black/5 text-black px-8 py-3.5 font-bold uppercase text-xs tracking-wider border border-transparent hover:border-black/20 transition-all duration-300 rounded-[2px] flex items-center justify-center gap-2 w-full sm:w-auto">
                 <Github size={16} /> Repository
               </a>
             )}
@@ -103,7 +103,7 @@ export default function ProjectCaseLayout({
 
         {/* ── Main Cover Image ──────────────────────── */}
         {project.heroImg && (
-          <section className="px-6 md:px-10 pb-16">
+          <section className="px-4 sm:px-6 md:px-10 pb-12 md:pb-16">
             <Gsap.div
               initial={{ opacity: 0, y: 22 }}
               animate={{ opacity: 1, y: 0 }}
@@ -129,7 +129,7 @@ export default function ProjectCaseLayout({
           </section>
         )}
 
-        <section className="max-w-5xl mx-auto px-6 md:px-10 pb-24">
+        <section className="max-w-5xl mx-auto px-4 sm:px-6 md:px-10 pb-16 md:pb-24">
 
           {/* Custom Section Block */}
           {preFeatureSection}
