@@ -164,7 +164,7 @@ Kalau kamu ingin menyesuaikan perilaku AI atau konteks section, cek `src/service
 
 - Foto about: `public/profilee.webp`
 - Foto preload hero: `public/profile.webp`
-- Gambar OG/Twitter: `public/og-icon.png`
+- Gambar OG/Twitter: `public/projects/tab.jpg`
 - Galeri hackathon: `public/hackathon-base/`
 - CV: `public/cv.pdf`
 
