@@ -14,7 +14,7 @@ const PROJECT_DETAIL_COMPONENTS = {
   "simple-rag": lazy(() => import("./SimpleRAGDetail")),
   backuper: lazy(() => import("./BackuperDetail")),
   "finansial-assistant-bot": lazy(() => import("./FinanceTrackerDetail")),
-  "relax-spa": lazy(() => import("./RelaxSpaDetail")),
+  "homestay-in-jogja": lazy(() => import("./HomestayInJogjaDetail")),
 };
 
 export function getProjectRouteConfig(slug) {

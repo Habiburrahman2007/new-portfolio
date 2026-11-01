@@ -364,26 +364,25 @@ export const PROJECT_DETAILS_DATA = {
       repo: "https://github.com/Habiburrahman2007/finance-tracker",
     },
   },
-  "relax-spa": {
-    title: "RelaxSpa & Wellness",
-    category: "Landing Page",
+  "homestay-in-jogja": {
+    title: "Homestay in Jogja",
+    category: "Hospitality Website",
     tagline:
-      "A professional digital platform designed for a spa and wellness center to modernize its business operations. The website serves as a digital storefront that showcases various therapeutic treatments and provides a seamless way for clients to explore services and make inquiries.",
+      "A hospitality website showcasing comfortable homestays in Yogyakarta for holidaymakers and families. It highlights a relaxed, home-like stay, modern amenities, and convenient access to popular destinations including Malioboro, Kraton, Alun-Alun, and Tugu Station.",
     year: "2025",
-    stack: ["JS Native", "Tailwind CSS"],
+    stack: [],
     features: [
-      "Treatment Catalog: A categorized display of spa services, including durations, benefits, and pricing.",
-      "Online Reservation System: Integrated booking functionality that allows customers to schedule sessions digitally.",
-      "Mobile-First Design: A fully responsive layout ensuring a luxury user experience across smartphones, tablets, and desktops.",
-      "Location & Contact Integration: Built-in maps and direct contact triggers to help local clients find and reach the spa easily.",
+      "Homestay Showcase: Presents available accommodation units and their comfortable, home-like atmosphere.",
+      "Amenities Overview: Highlights the modern facilities available to guests.",
+      "Location Discovery: Promotes convenient access to Yogyakarta destinations such as Malioboro, Kraton, Alun-Alun, and Tugu Station.",
+      "Guest-Focused Positioning: Introduces the accommodation as an option for family trips and holidays.",
     ],
     impact: [
-      "The project is currently in the deployment and showcase phase, providing the business with a high-end digital identity.",
-      "Significantly increases visibility to potential customers in the Semarang area and establishes a professional online presence.",
+      "Gives the homestay a dedicated online presence where prospective guests can explore the accommodation.",
+      "Clearly communicates the property's amenities, relaxed atmosphere, and proximity to popular Yogyakarta destinations.",
     ],
     links: {
-      live: "https://relaxspa.vibedev.my.id/",
-      repo: "https://github.com/Habiburrahman2007/relax_spa",
+      live: "https://homestayinjogja.com/",
     },
   },
 };

@@ -33,11 +33,11 @@ export const PROJECT_META = [
   },
   {
     id: 5,
-    slug: "relax-spa",
-    title: "Relax Spa",
-    category: "Landing Page",
+    slug: "homestay-in-jogja",
+    title: "Homestay in Jogja",
+    category: "Hospitality Website",
     color: "bg-teal-400",
-    img: "/projects/spa.webp",
+    img: "/projects/homestay_in_jogja.webp",
   },
   {
     id: 6,

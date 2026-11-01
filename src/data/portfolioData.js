@@ -84,10 +84,10 @@ export const PORTFOLIO_DATA = {
             description: "An automated financial recording assistant that utilizes AI to parse natural language messages from Telegram and log them to Google Sheets."
         },
         {
-            slug: "relax-spa",
-            title: "RelaxSpa & Wellness",
-            category: "Landing Page",
-            description: "A professional digital platform designed for a spa and wellness center to modernize its business operations and storefront."
+            slug: "homestay-in-jogja",
+            title: "Homestay in Jogja",
+            category: "Hospitality Website",
+            description: "A website showcasing comfortable, family-friendly homestays in Yogyakarta, with modern amenities and convenient access to destinations like Malioboro, Kraton, and Tugu Station."
         },
         {
             slug: "hifdz-tracker",
